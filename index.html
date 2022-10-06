@@ -30,28 +30,30 @@
   <header>
     <nav class="navigation">
       <ul class="navbar">
-        <li>New Projects</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>Contact</li>
+        <li class="nav-items"><a href="#">New Projects</a></li>
+        <li class="nav-items"><a href="#">Settings</a></li>
+        <li class="nav-items"><a href="#">Profile</a></li>
+        <li class="nav-items"><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
         
   <main>
-    <p id="intro">
-      <h1> 1 Step at a time is still progress </h1>
+    <div id="intro">
+      <h1><span class="eyecatcher">One Step at a time is still progress</span></h1>
       <p>
-      My name is KiAndre Riley, and I believe in creating visual appealing websites while maintaining functionality that enhance the overall experience to the user.
-      I have been developing projects through courses like FreeCodeCamp and Udemy that have prepared me for projects in the real world.
+      My name is KiAndre Riley, I am a Web Developer who enjoys building visually appealing websites while maintaining functionality that enhances the overall experience for users.
       <br>
-      My tech stack:
+      <img src="images/headshot.jpg" alt="" class="profile-picture">
       </p>
-    </p>
-    <p>
+    </div>
+  
+  </main>
+  <section class="soft-skills">
+    <!-- <p>
       <p>
         Daily Tech:
-      <ul>
+      <ul class="skills">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -60,14 +62,45 @@
       </p>
       Tech Currently Learning: React, SASS, JQuery
       Prospective Tech to Learn: Python, Node 
-    </p>
-  
-  </main>
-   
-  <footer>
+    </p> -->
+
+    <!-- List of Soft skills to choose from
+      1.giving and receiving feedback
+      2.Work ethic
+      3.conflict resolution
+      4.prioritization 
+      5.positive attitude -->
+    
+    <div>
+      <h3>Work Ethic</h3> 
+      <p></p>
+    </div>
+    <div>
+      <h3>Conflict Resolution</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Prioritization</h3>
+      <p></p>
+    </div>
+    <div>
+      <h3>Positive Attitude</h3>
+      <p></p>
+    </div>
+  </section>
+
+  <section class="contact-form">
     <p>
       If you think we might be a good fit, please contact me at 972-365-6214 or kiandreriley89@gmail.com. I would love to talk more. 
     </p>
+    <form action="">
+      <label for="contact"></label>
+      <textarea name="contact" id="contact" cols="150" rows="15"></textarea>
+    </form>
+  </section>
+   
+  <footer>
+    
   </footer>
 </body>
 </html> 
