@@ -19,11 +19,13 @@ body{
 }
 
 #intro{
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  margin-left:10%;
-  margin-right:10%;
+  font-size: 3rem;
+  
+}
+
+.eyecatcher{
+  color: #FFE82A;
+  font-size: 5rem;
   
 }
 
@@ -32,14 +34,75 @@ body{
   flex-direction:row;
   list-style-type: none;
   justify-content: center;
+  background-color:#202124;
+  
 
 }
 
-li{
-  margin:3%;
+.nav-items{
+  margin:0 2%;
+  color: #FFE82A;
+  padding:1.5% 2%;
+
+}
+
+.nav-items a{
+  text-decoration: none;
+}
+
+.nav-items:hover{
+  cursor: pointer;
+  background-color: hsl(225deg 6% 30%);
 }
 
 main{
-  width:70%;
+  width:80%;
   margin:0 auto;
+  height:95vh;
+}
+
+.profile-picture{
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+}
+
+
+.skills{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding:5%;
+  background-color: white;
+  width:100%;
+  color:black;
+}
+
+.soft-skills{
+  padding:7% 15%;
+  background-color:#fff;
+  color:black;
+  display:flex;
+  justify-content: space-between;
+}
+
+.soft-skills div{
+  border:solid blue 3px;
+  margin: 3%;
+  padding:3%;
+}
+
+.contact-form{
+  background-color: #02013a;
+  width:80%;
+  margin:2% auto;
+  display:flex;
+  padding:1%;
+}
+
+.contact-form p,textarea{
+  padding:2%;
+  font-size: 1em;
+  width:50%;
 }
