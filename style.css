@@ -3,51 +3,44 @@
   padding:0;
 }
 
-
 html{
-  margin:0;
-  padding:0;
-  /* background-color:rgba(35, 34, 33, 0.904); */
-  color:aliceblue;
   font-family:'Nunito', sans-serif;
   box-sizing:border-box;
- 
 }
+
 
 body{
-  background-color:blue;
+  margin-left:8%;
+  background-color:#fff;
 }
 
-#intro{
-  font-size: 3rem;
-  
+li,a{
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.eyecatcher{
-  color: #FFE82A;
-  font-size: 5rem;
-  
-}
 
 .navbar{
   display:flex;
-  flex-direction:row;
-  list-style-type: none;
-  justify-content: center;
+  flex-direction:column;
+  justify-content: flex-start;
+  position:fixed;
+  width:8%;
+  height:100vh;
   background-color:#202124;
-  
-
+  top:0;
+  left:0;
 }
 
 .nav-items{
-  margin:0 2%;
-  color: #FFE82A;
   padding:1.5% 2%;
+  color:#fff;
 
 }
 
 .nav-items a{
   text-decoration: none;
+  color:#fff;
 }
 
 .nav-items:hover{
@@ -55,16 +48,48 @@ body{
   background-color: hsl(225deg 6% 30%);
 }
 
-main{
-  width:80%;
+
+.cover{
+  font-size: 2rem;
+  width:90%;
   margin:0 auto;
   height:95vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+ 
+  
 }
+
+.eyecatcher{
+  margin-bottom:20%;
+}
+
+.about-me{
+  background-color:hsl(240, 100%, 60%);
+  color: #FFE82A;
+  padding:7% 15%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me p{
+  width:70%;
+}
+
+.about-me img{
+  margin-top:50px;
+  
+}
+
 
 .profile-picture{
   border-radius: 50%;
-  width:200px;
-  height:200px;
+  width:100px;
+  height:100px;
 }
 
 
@@ -73,36 +98,39 @@ main{
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-  padding:5%;
   background-color: white;
   width:100%;
   color:black;
 }
 
 .soft-skills{
-  padding:7% 15%;
   background-color:#fff;
   color:black;
   display:flex;
   justify-content: space-between;
 }
 
-.soft-skills div{
-  border:solid blue 3px;
-  margin: 3%;
-  padding:3%;
-}
-
-.contact-form{
-  background-color: #02013a;
-  width:80%;
-  margin:2% auto;
+.skills div{
+  border:solid hsl(240, 100%, 60%) 3px;
+  padding:7%;
+  margin-top:5px;
+  margin-bottom:5px;
   display:flex;
-  padding:1%;
+  flex-direction:column;
+  justify-content: center;
 }
 
-.contact-form p,textarea{
-  padding:2%;
-  font-size: 1em;
-  width:50%;
+.projects{
+  display:grid;
+  grid-template-columns: .5fr .5fr;
+  background-color: hsl(240, 100%, 60%);
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.projects div{
+  background-color:white;
+  padding:80px;
+  margin:20px;
 }
